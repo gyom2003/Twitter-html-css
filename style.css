@@ -9,13 +9,18 @@ body {
     background-color: white;
 }
  /* me menu */
- div.menudiv {
-     display: inline-flex;
-    margin-left: 20px;
-    border-right: 1px solid  #AAB8C2;
+
+
+.menudiv {
+    display: inline-flex;
     max-width: 300px;
     height: 100vh;
 }
+
+nav {
+    position: fixed;
+}
+
 div.theparent {
     display: flex;
     margin-top: 28px;
@@ -58,9 +63,9 @@ li a{
 }
 div.menuprofil {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    margin-top: 40px;
+    margin-top: 25px;
 }
 .k {
     width:30px;
@@ -78,11 +83,33 @@ p.second {
     font-size: 12px;
     margin-left: 5px;
 }
-
 /* section home 1*/
+
+main {
+    position: relative;
+    width: 43%;
+    left: 300px;
+    top: -620px;
+    border-left: 1px solid #AAB8C2;
+    
+}
+aside {
+    position: relative;
+    left: 850px;
+    width: 34%;
+    top: -2165px;
+}
+.eo {
+    position: fixed;
+}
+.article1 {
+    border-bottom: 1px solid #AAB8C2;
+}
+.article2 {
+    border-bottom: 1px solid #AAB8C2;
+}
 div.home1 {
-    width: 500px;
-    margin-left: 70px;
+    width: auto;
     border-right: 1px solid #AAB8C2;
 }
 div.whatsup {
@@ -103,7 +130,7 @@ div.upbar {
     height: 30px;
     fill: #1DA1F2;
     margin-top: 20px;
-    margin-left: 400px;
+    margin-left: 420px;
     margin-right: 12px;
 }
 
@@ -135,16 +162,16 @@ div.winput2 {
     fill: #1DA1F2;
     margin: 10px;
 }
-.wtweet {
+.wtweet {   
+    margin-left: 230px;
     text-align: center;
     width: 60px;
     height: 30px;
     border-radius: 15px;
-    margin-left: 180px;
     color: white;
     background-color: #1DA1F2;
-    border: none;
     font-weight: 500;
+    border: none; 
 }
 .firstinput {
     width: 466px;   
@@ -204,9 +231,10 @@ div.winput2 {
 .sus {
     border-radius: 15px;
     margin: 10px;
-    width: 440px;
-    height: 280px;
+    width: 85%;
+    height: auto;
 }
+
 .susmeter {
     margin-left: 40px;
     display: flex;
@@ -247,10 +275,9 @@ div.winput2 {
 }
 
  /* third search bar  */
- 
 .thirdinput {
     margin-left: 22px;
-    margin-top: 15px;
+    margin-top: 12px;
     border-radius: 20px;
     width: 320px;
     height: 28px;
@@ -267,7 +294,7 @@ div.winput2 {
 
 /* coté droit*/
 .trendforyou {
-    margin-top: 20px;
+    margin-top: 15px;
     margin-left: 22px;
     border-radius: 20px;
     width: 370px;
@@ -348,7 +375,7 @@ p.showmeyoure {
 }
 
 .whotofollow {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 22px;
     border-radius: 20px;
     width: 380px;
@@ -445,6 +472,20 @@ h2.specialh2 {
         display: none;
         opacity: 0;
     }
+    .wtweet {
+        visibility: hidden;
+        display: none;
+        opacity: 0;
+    }
+}
+
+@media all and (max-width: 700px) {
+
+    .upperbody {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
 
 @media all and (max-width: 590px) {
@@ -477,6 +518,38 @@ h2.specialh2 {
     }
 
 }
+
+
+/*les hover effects*/
+.wtweet:hover {
+    background-color: #6BC2E9;
+}
+
+.menubttn:hover {
+    background-color: #6BC2E9;
+}
+
+#twittos:hover {
+    background-color: #6BC2E9;
+}
+
+.contentdivright:hover {
+    background-color: #AAB8C2;
+}
+
+.showmeyoure:hover {
+    text-decoration: underline;
+}
+
+.contenumiddle:hover {
+    background-color: #AAB8C2;
+}
+
+.anotheronebttn:hover {
+    background-color: #1DA1F2;
+    color: white;
+}
+
 
 
 
